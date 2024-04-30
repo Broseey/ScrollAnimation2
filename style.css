@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Primary';
+    src: url(./assets/fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --primary:#cfcfcf;
+    --secondary:#131313;
+    --alternate:#b3b0b7;
+    --alternate-2:#b7bcb6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: calc(100vw / 1920*10);
+}
+
+body{
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: 'Primary';
+}
+
+section {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 5.9rem;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+/* Nav */
+.nav {
+    position: fixed;
+    left: 2.5rem;
+    top: 2.5rem;
+    width: 100%;
+    z-index: 999;
+    padding: 0 2.5rem;
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.25rem 2.5rem;
+
+    border: 1px solid var(--secondary);
+    border-radius: 5rem;
+    backdrop-filter: blur(20px);
+}
+
+.nav_list{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav_list li {
+    font-family: 'Primary';
+    font-size: 2.5rem;
+    cursor:pointer;
+}
+
+/* Hero */
+.hero{
+    padding-top: 50rem;
+}
+.hero_wrapper{
+    padding: 2.5rem;
+
+    border: 1px solid var(--secondary);
+    border-bottom: unset;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    background-color: var(--alternate);
+}
+.hero_title{
+    overflow: hidden;
+}
+
+.hero_title h1{
+    font-size: 40rem;
+    text-transform: uppercase;
+}
+.hero_title h1::before {
+    content: 'THE';
+    font-size: 2.5rem;
+}
+
+/* Gallery */
+.gallery{
+    margin-bottom: 20rem;
+}
+.gallery_wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: hidden;
+    border: 1px solid var(--secondary);
+    border-top: unset;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    background-color: var(--alternate);
+}
+
+.gallery_figure{
+    width: 95rem;
+    height: 95rem;
+    overflow: hidden;
+}
+
+/* Marquee */
+
+.marquee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--secondary);
+    border-radius: 5rem;
+
+    margin-bottom: 20rem;
+}
+
+.marquee_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.marquee_text h1{
+    font-size: 25rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--alternate-2);
+    color: var(--secondary);
+    z-index: 1;
+    height: 100%;
+    padding-top: 20rem;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+.footer_wrapper{
+    padding:2.5rem;
+}
+
+.footer_row {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_row_col{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_title h1{
+    font-size: 40rem;
+    text-transform: uppercase;
+}
+.footer_title h1::before{
+    content: 'THE';
+    font-size: 2.5rem;
+}

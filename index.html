@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locomotive Scroll Project</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_wrapper">
+            <div class="nav_item">
+                <h4>the Ordinary</h4>
+            </div>
+            <div class="nav_item">
+                <ul class="nav_list">
+                    <li id="hero">Hero</li>
+                    <li id="gallery">Gallery</li>
+                    <li id="footer">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main class="app" data-scroll-container>
+        <section class="hero" data-scroll-section>
+            <div class="hero_wrapper">
+                <div class="hero_title" data-scroll data-scroll-call="hero">
+                    <h1>Ordinary</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" data-scroll-section>
+            <div class="gallery_wrapper">
+                <figure class="gallery_figure" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+                    <img src="./assets/images/t1.jpg" alt="" class="gallery_image">
+                </figure>
+                <figure class="gallery_figure" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+                    <img src="./assets/images/t2.jpg" alt="" class="gallery_image">
+                </figure>
+            </div>
+        </section>
+
+        <section class="marquee" data-scroll-section>
+            <div class="marquee_text" data-scroll data-scroll-speed="8" data-scroll-direction="horizontal">
+                <h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio harum magnam accusantium fuga doloribus iste necessitatibus soluta quasi accusamus eos qui dolorem suscipit odio, dolor maiores assumenda ipsam placeat.
+                </h1>
+            </div>
+            <div class="marquee_text" data-scroll data-scroll-speed="-8" data-scroll-direction="horizontal">
+                <h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio harum magnam accusantium fuga doloribus iste necessitatibus soluta quasi accusamus eos qui dolorem suscipit odio, dolor maiores assumenda ipsam placeat.
+                </h1>
+            </div>
+        </section>
+
+        <section class="footer" data-scroll-section>
+            <div class="footer_wrapper" data-scroll data-scroll-speed="-2" data-scroll-call="footer">
+                <div class="footer_row">
+                    <div class="footer_row_col">
+                        <ul class="nav_list">
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_row_col">
+                        <ul class="nav_list">
+                            <li>Hero</li>
+                            <li>Gallery</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer_row_col">
+                        <ul class="nav_list">
+                            <li>Brand Kit</li>
+                            <li>Drop</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_row_col">
+                        <ul class="nav_list">
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                            <li>Tiktok</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer_row">
+                    <div class="footer_title">
+                        <h1>Ordinary</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Javascript CDN libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <!-- Javascript Folder Path -->
+    <script src="index.js"></script>
+</body>
+</html>
